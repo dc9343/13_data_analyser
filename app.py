@@ -1,4 +1,4 @@
-from calculation import calculation_total
+from calculation import calculation_total, calculation_min, calculation_max, calculation_ave
 
 if __name__ == '__main__':
     # ユーザからの入力を受け取る
@@ -21,8 +21,7 @@ if __name__ == '__main__':
 
     # print(numbers)
 
-
-    # 各統計量を計算する(合計、平均、・・)
+    # 各統計量を計算する(合計、最大、最小、平均)
     total = calculation_total(numbers)
 
     # print(total)
@@ -31,3 +30,24 @@ if __name__ == '__main__':
 
     # 出力する
     print(f"合計; {total}")
+
+    # [✗] ユーザから整数のリストを受け取る
+    # [ ] 最小値を計算する
+    # [ ] 入力された数値を比較する
+    # [ ] 小さい数字を残していく
+    # [ ] 最小値の変数に代入する
+
+    # [ ] 最小値を出力する
+    # min = "最小値"
+
+    max = calculation_max(numbers)
+
+    print(f"最大値; {max}")
+
+    min = calculation_min(numbers)
+
+    print(f"最小値; {min}")
+
+    ave = calculation_ave(numbers)
+
+    print(f"平均値; {ave}")
